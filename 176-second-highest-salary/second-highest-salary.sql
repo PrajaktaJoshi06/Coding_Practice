@@ -1,14 +1,14 @@
 -- # Write your MySQL query statement below
-SELECT MAX(e1.salary) as SecondHighestSalary
-FROM Employee e1 
-Join Employee e2
-on e1.salary < e2.salary
+-- SELECT MAX(e1.salary) as SecondHighestSalary
+-- FROM Employee e1 
+-- Join Employee e2
+-- on e1.salary < e2.salary
 
--- SELECT MAX(salary) as SecondHighestSalary
--- FROM Employee 
--- where salary not in 
--- (SELECT MAX(salary) as SecondHighestSalary
--- FROM Employee)
+SELECT MAX(salary) as SecondHighestSalary
+FROM Employee 
+where salary not in 
+(SELECT MAX(salary) as SecondHighestSalary
+FROM Employee)
 
 -- WITH ranked_sal AS (
 --     SELECT 
