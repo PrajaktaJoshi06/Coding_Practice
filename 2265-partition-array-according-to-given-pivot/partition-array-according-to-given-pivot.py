@@ -3,7 +3,7 @@ class Solution:
         left = []
         right = []
         pivots = []
-        ans = []
+        # ans = []
         i = 0
         for i in nums:
             if i<pivot:
@@ -13,8 +13,8 @@ class Solution:
             elif i==pivot:
                 pivots.append(i)
 
-        ans.extend(left)
-        ans.extend(pivots)
-        ans.extend(right)
-        return ans
+        # ans.extend(left)
+        # ans.extend(pivots)
+        # ans.extend(right)
+        return left + pivots + right
         
