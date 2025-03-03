@@ -7,10 +7,11 @@ class Solution:
                 nums[i+1] = 0
             else:
                 pass
-        for j in nums:
-            if j == 0:
-                nums.remove(j)
-                nums.append(j)
+        j = 0
+        for i in range(n):
+            if nums[i] != 0:
+                nums[j],nums[i] = nums[i],nums[j]
+                j+=1
             else:
                 pass
         return nums
