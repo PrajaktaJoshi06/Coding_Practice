@@ -8,7 +8,7 @@ class Solution:
 
         l = 0
         r = len(ns)-1
-        while l<r:
+        while l<=r:
             if ns[l] != ns[r]:
                 return False
             l += 1
